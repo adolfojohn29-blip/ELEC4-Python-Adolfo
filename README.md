@@ -20,3 +20,20 @@ python set1/p1/p1_grade_calculator.py
 **Sample Output:**
 
 ![P1 Grade Calculator](set1/p1/screenshots/p1_results.png)
+
+
+### P2 - Custom Module: student_utils
+
+A Python program that uses a custom module to calculate student grades and display a report with the date and time.
+
+**Activity Folder:** [P2](set1/p2/)
+
+**How to Run:**
+
+```bash
+python set1/p2/p2_main.py
+```
+
+**Sample Output:**
+
+![P2 Student Grade Report](set1/p2/screenshots/p2_results.png)
