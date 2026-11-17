@@ -62,3 +62,26 @@ python set1/p3/p3_record_manager.py
 ![P3 Remove Student](set1/p3/screenshots/p3_remove.png)
 
 ![P3 Display Students](set1/p3/screenshots/p3_display.png)
+
+
+### P4 - Safe Menu Program
+
+A Python menu-driven program that demonstrates exception handling using try, except, else, and finally. It handles invalid numeric input, division by zero, missing files, and invalid menu choices without crashing.
+
+**Activity Folder:** [P4](set1/p4/)
+
+**How to Run:**
+
+```bash
+python set1/p4/p4_exceptions.py
+```
+
+**Sample Outputs:**
+
+![P4 Invalid Number](set1/p4/screenshots/p4_invalid_number.png)
+
+![P4 Division by Zero](set1/p4/screenshots/p4_zero_division.png)
+
+![P4 File Not Found](set1/p4/screenshots/p4_file_not_found.png)
+
+![P4 Invalid Menu](set1/p4/screenshots/p4_invalid_menu.png)
