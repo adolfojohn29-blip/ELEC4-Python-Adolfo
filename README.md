@@ -85,3 +85,28 @@ python set1/p4/p4_exceptions.py
 ![P4 File Not Found](set1/p4/screenshots/p4_file_not_found.png)
 
 ![P4 Invalid Menu](set1/p4/screenshots/p4_invalid_menu.png)
+
+## Set 2 – Python Programming Activities
+
+| Activity | Description | How to run from the repository root |
+| --- | --- | --- |
+| [P5 – Student Information File System](set2/p5/) | Adds, displays, searches, and updates student records stored in `students.txt`. | `python set2/p5/p5_file_system.py` |
+| [P6 – Recursion Toolkit](set2/p6/) | Demonstrates recursive factorial, sum, Fibonacci, and list search. | `python set2/p6/p6_recursion.py` |
+| [P7 – Student Management System with Classes](set2/p7/) | Uses `Student`, `Subject`, and `Section` classes to manage student information and validate grades. | `python set2/p7/p7_classes.py` |
+| [P8 – Inheritance and Polymorphism](set2/p8/) | Shows how `Student` and `Teacher` inherit from `Person` and override `introduce()`. | `python set2/p8/p8_inheritance.py` |
+
+### P5 – Student Information File System
+
+![P5 student records loaded after reopening the program](set2/p5/screenshots/p5_reopened.png)
+
+### P6 – Recursion Toolkit
+
+![P6 results for factorial, sum, Fibonacci, and recursive search](set2/p6/screenshots/p6_results.png)
+
+### P7 – Student Management System with Classes
+
+![P7 student grade update, validation, and section roster](set2/p7/screenshots/p7_results.png)
+
+### P8 – Inheritance and Polymorphism
+
+![P8 introductions from Person, Student, and Teacher](set2/p8/screenshots/p8_results.png)
