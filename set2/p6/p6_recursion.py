@@ -22,6 +22,30 @@ def sum_numbers(n):
     return n + sum_numbers(n - 1)
 
 
+# Base cases: the first term is 0 and the second term is 1.
+# Recursive calls: add the two preceding Fibonacci terms.
+def fibonacci(n):
+    if n == 1:
+        return 0
+
+    if n == 2:
+        return 1
+
+    return fibonacci(n - 1) + fibonacci(n - 2)
+
+
+# Base case: an empty list means the target was not found.
+# Recursive call: if the first item does not match, search the remaining items.
+def search(items, target):
+    if not items:
+        return False
+
+    if items[0] == target:
+        return True
+
+    return search(items[1:], target)
+
+
 def main():
     print("=== P6 Recursion Toolkit ===")
     print("John Nicole R Adolfo | IV-BSIT A")
@@ -29,30 +53,52 @@ def main():
     while True:
         print("\n1. Factorial")
         print("2. Sum from 1 to n")
-        print("3. Exit")
+        print("3. Fibonacci")
+        print("4. Recursive search")
+        print("5. Exit")
         choice = input("Choose an option: ").strip()
 
-        if choice == "3":
+        if choice == "5":
             break
 
-        if choice not in ("1", "2"):
-            print("Please choose 1, 2, or 3.")
+        if choice == "4":
+            values = input("Enter items separated by commas: ")
+            items = [item.strip() for item in values.split(",") if item.strip()]
+            target = input("Enter the item to search for: ").strip()
+
+            if len(items) > 100:
+                print("Please enter at most 100 items.")
+                continue
+
+            print(f"Search result: {search(items, target)}")
             continue
 
+        if choice not in ("1", "2", "3"):
+            print("Please choose a number from 1 to 5.")
+            continue
+
+        minimum, maximum = (1, 25) if choice == "3" else (0, 100)
+
         try:
-            number = int(input("Enter a whole number from 0 to 100: "))
+            number = int(
+                input(f"Enter a whole number from {minimum} to {maximum}: ")
+            )
         except ValueError:
             print("Please enter a whole number.")
             continue
 
-        if not 0 <= number <= 100:
-            print("Please enter a number from 0 to 100.")
+        if not minimum <= number <= maximum:
+            print(f"Please enter a number from {minimum} to {maximum}.")
             continue
 
         if choice == "1":
             print(f"Factorial of {number} = {factorial(number)}")
-        else:
+        elif choice == "2":
             print(f"Sum from 1 to {number} = {sum_numbers(number)}")
+        else:
+            terms = [fibonacci(position) for position in range(1, number + 1)]
+            print(f"First {number} Fibonacci terms: {terms}")
+            print(f"Fibonacci term #{number} = {terms[-1]}")
 
 
 if __name__ == "__main__":
