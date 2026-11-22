@@ -1,0 +1,5 @@
+ST001|Alex Reyes|BSIT IV-A|94.00
+ST002|Sam Cruz|BSIT IV-A|90.00
+ST003|Jamie Santos|BSIT IV-A|88.00
+ST004|Riley Garcia|BSIT IV-A|93.00
+ST005|Casey Flores|BSIT IV-A|87.00
